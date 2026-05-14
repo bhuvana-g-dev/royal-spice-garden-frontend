@@ -1222,3 +1222,70 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .card-footer    { flex-direction: column; align-items: flex-start; gap: .75rem; }
   .btn-sm         { width: 100%; }
 }
+
+/* ==============================================
+   STYLE ADDITIONS for v4
+   INSTRUCTIONS: Paste this block at the very
+   END of your existing style.css file.
+   Do not replace the whole file — just append.
+   ============================================== */
+
+/* ── Skeleton loader ─────────────────────────── */
+.menu-skeleton {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.75rem;
+  margin-top: .5rem;
+}
+
+.skeleton-card {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shimmer animation */
+.skeleton-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(201,150,58,.07) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+/* ── Menu empty state ────────────────────────── */
+.menu-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--clr-text-muted);
+  font-size: 1rem;
+  border: 1px dashed var(--clr-border);
+  border-radius: var(--radius-lg);
+  background: var(--clr-surface);
+}
+
+/* ── Card image placeholder (when no image URL) ─ */
+.card-img-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--clr-surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--clr-text-dim);
+}

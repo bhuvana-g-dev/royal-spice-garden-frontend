@@ -3,56 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ✅ SEO: Descriptive title + meta description -->
   <title>Royal Spice Garden | Authentic South Indian Restaurant in Madurai</title>
   <meta name="description" content="Royal Spice Garden — Madurai's finest destination for authentic South Indian and Mughal-inspired cuisine. Dine in, catering & table bookings available." />
   <meta name="theme-color" content="#0e0a07" />
-
-  <!-- ✅ Open Graph (social sharing previews) -->
   <meta property="og:title" content="Royal Spice Garden | Authentic South Indian Restaurant" />
   <meta property="og:description" content="Award-winning cuisine since 2008. Book a table or request catering in Madurai." />
   <meta property="og:type" content="restaurant" />
-
-  <!-- ✅ Preconnect for faster font loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ============================================================
-       SKIP LINK — Accessibility: lets keyboard users skip navbar
-  ============================================================ -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- ============================================================
-       NAVIGATION
-  ============================================================ -->
+  <!-- NAVIGATION -->
   <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
     <a href="#home" class="nav-brand" aria-label="Royal Spice Garden — go to homepage">
       <span class="nav-logo" aria-hidden="true">&#9830;</span>
       Royal Spice Garden
     </a>
-
-    <!-- ✅ Hamburger: proper aria-expanded toggling done via JS -->
-    <button
-      class="nav-toggle"
-      id="navToggle"
-      aria-label="Open navigation menu"
-      aria-expanded="false"
-      aria-controls="navLinks"
-    >
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
       <span class="hamburger-bar"></span>
       <span class="hamburger-bar"></span>
       <span class="hamburger-bar"></span>
     </button>
-
-    <!-- ✅ Overlay behind open mobile menu -->
     <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
-
     <ul class="nav-links" id="navLinks" role="list">
       <li><a href="#home"     class="nav-link" data-section="home">Home</a></li>
       <li><a href="#about"    class="nav-link" data-section="about">About</a></li>
@@ -62,37 +39,22 @@
     </ul>
   </nav>
 
-  <!-- ============================================================
-       MAIN CONTENT WRAPPER (for skip link target)
-  ============================================================ -->
   <main id="main-content">
 
-    <!-- ==========================================================
-         SECTION 1 — HERO
-    ========================================================== -->
+    <!-- SECTION 1 — HERO -->
     <section id="home" class="hero" aria-label="Welcome to Royal Spice Garden">
       <div class="hero-overlay" aria-hidden="true"></div>
-
       <div class="hero-content">
         <p class="hero-tagline">Est. 2008 &middot; Madurai, Tamil Nadu</p>
-
-        <!-- ✅ h1 is the page's primary heading — one per page -->
-        <h1 class="hero-title">
-          Royal Spice<br />
-          <em>Garden</em>
-        </h1>
-
+        <h1 class="hero-title">Royal Spice<br /><em>Garden</em></h1>
         <p class="hero-subtitle">
           Where every meal is a celebration of flavour,<br class="hero-br" />
           tradition &amp; warmth.
         </p>
-
         <div class="hero-buttons" role="group" aria-label="Primary actions">
           <a href="#menu"     class="btn btn-primary">Explore Menu</a>
           <a href="#services" class="btn btn-outline">Book a Table</a>
         </div>
-
-        <!-- ✅ Trust signals inline -->
         <div class="hero-trust" aria-label="Trust signals">
           <span>&#11088; 4.9 Rating</span>
           <span class="trust-sep" aria-hidden="true">·</span>
@@ -101,41 +63,29 @@
           <span>&#127881; Events &amp; Catering</span>
         </div>
       </div>
-
-      <!-- Decorative scroll hint -->
       <div class="hero-scroll-hint" aria-hidden="true">
         <span>Scroll</span>
         <div class="scroll-line"></div>
       </div>
     </section>
 
-    <!-- ==========================================================
-         SECTION 2 — ABOUT
-    ========================================================== -->
+    <!-- SECTION 2 — ABOUT -->
     <section id="about" class="about section" aria-labelledby="about-heading">
       <div class="container about-grid">
-
         <div class="about-image-wrap" data-reveal>
-          <!-- ✅ loading="lazy" on non-hero images to save bandwidth -->
           <img
             src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&auto=format&fit=crop&q=80"
             alt="Warm dining interior of Royal Spice Garden restaurant, Madurai"
-            class="about-img"
-            loading="lazy"
-            width="700"
-            height="500"
+            class="about-img" loading="lazy" width="700" height="500"
           />
           <div class="about-badge" aria-label="15 plus years of excellence">
             <span class="badge-num">15+</span>
             <span class="badge-txt">Years of<br />Excellence</span>
           </div>
         </div>
-
         <div class="about-text" data-reveal>
           <span class="section-label">Our Story</span>
-          <h2 class="section-title" id="about-heading">
-            A Legacy of<br /><em>Authentic Flavours</em>
-          </h2>
+          <h2 class="section-title" id="about-heading">A Legacy of<br /><em>Authentic Flavours</em></h2>
           <p>
             Nestled in the heart of Madurai, <strong>Royal Spice Garden</strong> has been serving
             authentic South Indian and Mughal-inspired delicacies since 2008. What began as a
@@ -147,27 +97,20 @@
             extraordinary. Every dish tells a story — of spice, culture, and love.
           </p>
           <ul class="about-features" role="list" aria-label="Our highlights">
-            <li class="feature-item">
-              <span class="feature-icon" aria-hidden="true">&#127859;</span>
-              <span>Authentic Recipes</span>
-            </li>
-            <li class="feature-item">
-              <span class="feature-icon" aria-hidden="true">&#127807;</span>
-              <span>Fresh Ingredients</span>
-            </li>
-            <li class="feature-item">
-              <span class="feature-icon" aria-hidden="true">&#11088;</span>
-              <span>Award-Winning Chefs</span>
-            </li>
+            <li class="feature-item"><span class="feature-icon" aria-hidden="true">&#127859;</span><span>Authentic Recipes</span></li>
+            <li class="feature-item"><span class="feature-icon" aria-hidden="true">&#127807;</span><span>Fresh Ingredients</span></li>
+            <li class="feature-item"><span class="feature-icon" aria-hidden="true">&#11088;</span><span>Award-Winning Chefs</span></li>
           </ul>
         </div>
-
       </div>
     </section>
 
-    <!-- ==========================================================
-         SECTION 3 — MENU
-    ========================================================== -->
+    <!-- SECTION 3 — MENU
+         ✅ FIX: #menuGrid is NOW EMPTY.
+            Cards are rendered dynamically by script.js
+            via fetchMenuFromAPI(). Admin panel changes
+            reflect here instantly on next page load.
+    -->
     <section id="menu" class="menu section" aria-labelledby="menu-heading">
       <div class="container">
 
@@ -177,7 +120,7 @@
           <p class="section-desc">Handcrafted with passion. Served with pride.</p>
         </div>
 
-        <!-- ✅ Filter tabs: role="tablist" pattern for accessibility -->
+        <!-- Filter tabs — JS re-wires these after dynamic render -->
         <div class="menu-tabs" role="tablist" aria-label="Filter menu by category">
           <button class="tab-btn active" data-filter="all"     role="tab" aria-selected="true"  aria-controls="menuGrid">All</button>
           <button class="tab-btn"        data-filter="biryani" role="tab" aria-selected="false" aria-controls="menuGrid">Biryani</button>
@@ -185,332 +128,73 @@
           <button class="tab-btn"        data-filter="drinks"  role="tab" aria-selected="false" aria-controls="menuGrid">Drinks</button>
         </div>
 
-        <!-- ✅ Live region: screen readers announce filter changes -->
         <p class="sr-only" role="status" id="menuStatus" aria-live="polite"></p>
 
-        <div class="menu-grid" id="menuGrid" role="tabpanel" aria-label="Menu items">
+        <!-- ✅ Skeleton loader shown while API is fetching -->
+        <div class="menu-skeleton" id="menuSkeleton" aria-label="Loading menu items" aria-live="polite">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
 
-          <!-- Chicken Biryani -->
-          <article class="menu-card" data-category="biryani" data-reveal>
-            <div class="card-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1701579231349-e0cb75fb8d3a?w=500&auto=format&fit=crop&q=80"
-                alt="Chicken Biryani — slow-cooked basmati rice with tender chicken"
-                class="card-img"
-                loading="lazy"
-                width="500"
-                height="200"
-              />
-              <span class="card-badge" aria-label="Chef's Pick">Chef's Pick</span>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Chicken Biryani</h3>
-              <p class="card-desc">Slow-cooked basmati rice with tender chicken, aromatic whole spices &amp; caramelised onions.</p>
-              <div class="card-footer">
-                <span class="card-price" aria-label="Price: 220 rupees">₹220</span>
-                <!-- ✅ data-item ready for future cart/backend integration -->
-                <button class="btn btn-sm" data-item="chicken-biryani" data-price="220" aria-label="Order Chicken Biryani">Order Now</button>
-              </div>
-            </div>
-          </article>
+        <!-- ✅ Empty state shown if API returns 0 items -->
+        <div class="menu-empty" id="menuEmpty" style="display:none;">
+          <p>&#127859; Menu is being updated. Please check back soon!</p>
+        </div>
 
-          <!-- Mutton Biryani -->
-          <article class="menu-card" data-category="biryani" data-reveal>
-            <div class="card-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500&auto=format&fit=crop&q=80"
-                alt="Mutton Biryani — succulent mutton layered with fragrant saffron rice"
-                class="card-img"
-                loading="lazy"
-                width="500"
-                height="200"
-              />
-              <span class="card-badge popular">Popular</span>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Mutton Biryani</h3>
-              <p class="card-desc">Succulent mutton pieces marinated overnight, layered with fragrant saffron rice.</p>
-              <div class="card-footer">
-                <span class="card-price" aria-label="Price: 290 rupees">₹290</span>
-                <button class="btn btn-sm" data-item="mutton-biryani" data-price="290" aria-label="Order Mutton Biryani">Order Now</button>
-              </div>
-            </div>
-          </article>
+        <!--
+          ✅ Cards are injected here by fetchMenuFromAPI() in script.js.
+             Do NOT put hardcoded <article> cards here anymore.
+        -->
+        <div class="menu-grid" id="menuGrid" role="tabpanel" aria-label="Menu items"></div>
 
-          <!-- Egg Biryani -->
-          <article class="menu-card" data-category="biryani" data-reveal>
-            <div class="card-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?w=500&auto=format&fit=crop&q=80"
-                alt="Egg Biryani — golden fried eggs in spiced basmati rice with fresh mint"
-                class="card-img"
-                loading="lazy"
-                width="500"
-                height="200"
-              />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Egg Biryani</h3>
-              <p class="card-desc">Golden fried eggs nestled in spiced basmati rice, garnished with fresh mint.</p>
-              <div class="card-footer">
-                <span class="card-price" aria-label="Price: 160 rupees">₹160</span>
-                <button class="btn btn-sm" data-item="egg-biryani" data-price="160" aria-label="Order Egg Biryani">Order Now</button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Chicken Grill -->
-          <article class="menu-card" data-category="grill" data-reveal>
-            <div class="card-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=500&auto=format&fit=crop&q=80"
-                alt="Chicken Grill — tandoori-marinated chicken grilled over charcoal"
-                class="card-img"
-                loading="lazy"
-                width="500"
-                height="200"
-              />
-              <span class="card-badge">Smoky</span>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Chicken Grill</h3>
-              <p class="card-desc">Whole chicken marinated in tandoori spices, grilled to perfection over charcoal flame.</p>
-              <div class="card-footer">
-                <span class="card-price" aria-label="Price: 380 rupees">₹380</span>
-                <button class="btn btn-sm" data-item="chicken-grill" data-price="380" aria-label="Order Chicken Grill">Order Now</button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Chicken 65 -->
-          <article class="menu-card" data-category="grill" data-reveal>
-            <div class="card-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=500&auto=format&fit=crop&q=80"
-                alt="Chicken 65 — crispy fried chicken tossed with chillies and curry leaves"
-                class="card-img"
-                loading="lazy"
-                width="500"
-                height="200"
-              />
-              <span class="card-badge popular">Popular</span>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Chicken 65</h3>
-              <p class="card-desc">Crispy deep-fried chicken tossed with fiery red chillies, curry leaves &amp; yoghurt sauce.</p>
-              <div class="card-footer">
-                <span class="card-price" aria-label="Price: 240 rupees">₹240</span>
-                <button class="btn btn-sm" data-item="chicken-65" data-price="240" aria-label="Order Chicken 65">Order Now</button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Shawarma -->
-          <article class="menu-card" data-category="grill" data-reveal>
-            <div class="card-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1561651823-34feb02250e4?w=500&auto=format&fit=crop&q=80"
-                alt="Shawarma — juicy grilled chicken wrapped in flatbread with garlic mayo"
-                class="card-img"
-                loading="lazy"
-                width="500"
-                height="200"
-              />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Shawarma</h3>
-              <p class="card-desc">Juicy grilled chicken wrapped in soft flatbread with garlic mayo, pickles &amp; fresh veggies.</p>
-              <div class="card-footer">
-                <span class="card-price" aria-label="Price: 130 rupees">₹130</span>
-                <button class="btn btn-sm" data-item="shawarma" data-price="130" aria-label="Order Shawarma">Order Now</button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Fried Rice -->
-          <article class="menu-card" data-category="grill" data-reveal>
-            <div class="card-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500&auto=format&fit=crop&q=80"
-                alt="Fried Rice — wok-tossed rice with vegetables and umami sauce"
-                class="card-img"
-                loading="lazy"
-                width="500"
-                height="200"
-              />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Fried Rice</h3>
-              <p class="card-desc">Wok-tossed rice with vegetables, eggs &amp; a secret blend of sauces for a bold umami kick.</p>
-              <div class="card-footer">
-                <span class="card-price" aria-label="Price: 180 rupees">₹180</span>
-                <button class="btn btn-sm" data-item="fried-rice" data-price="180" aria-label="Order Fried Rice">Order Now</button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Lemon Juice -->
-          <article class="menu-card" data-category="drinks" data-reveal>
-            <div class="card-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9e?w=500&auto=format&fit=crop&q=80"
-                alt="Fresh Lemon Juice with black salt and cumin in a tall glass"
-                class="card-img"
-                loading="lazy"
-                width="500"
-                height="200"
-              />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Lemon Juice</h3>
-              <p class="card-desc">Freshly squeezed lemons with a hint of black salt, cumin &amp; chilled water. Utterly refreshing.</p>
-              <div class="card-footer">
-                <span class="card-price" aria-label="Price: 60 rupees">₹60</span>
-                <button class="btn btn-sm" data-item="lemon-juice" data-price="60" aria-label="Order Lemon Juice">Order Now</button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Rose Milk -->
-          <article class="menu-card" data-category="drinks" data-reveal>
-            <div class="card-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1582214967-fc41a8cf2c0f?w=500&auto=format&fit=crop&q=80"
-                alt="Rose Milk — chilled full-cream milk blended with fragrant rose syrup"
-                class="card-img"
-                loading="lazy"
-                width="500"
-                height="200"
-              />
-              <span class="card-badge">Signature</span>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Rose Milk</h3>
-              <p class="card-desc">Chilled full-cream milk blended with fragrant rose syrup — a timeless Tamil refreshment.</p>
-              <div class="card-footer">
-                <span class="card-price" aria-label="Price: 80 rupees">₹80</span>
-                <button class="btn btn-sm" data-item="rose-milk" data-price="80" aria-label="Order Rose Milk">Order Now</button>
-              </div>
-            </div>
-          </article>
-
-        </div><!-- /menu-grid -->
       </div>
     </section>
 
-    <!-- ==========================================================
-         SECTION 4 — SERVICES
-    ========================================================== -->
+    <!-- SECTION 4 — SERVICES -->
     <section id="services" class="services section" aria-labelledby="services-heading">
       <div class="container">
-
         <div class="section-header">
           <span class="section-label">What We Offer</span>
           <h2 class="section-title" id="services-heading">Our <em>Services</em></h2>
           <p class="section-desc">Reserve your experience — in-restaurant dining or on-site catering.</p>
         </div>
-
         <div class="services-grid">
 
-          <!-- ── TABLE BOOKING FORM ─────────────────── -->
+          <!-- TABLE BOOKING FORM -->
           <div class="service-card" data-reveal>
             <div class="service-icon" aria-hidden="true">&#127860;</div>
             <h3 class="service-title">Table Booking</h3>
             <p class="service-desc">Reserve your table and enjoy a seamless, personalised dining experience.</p>
-
-            <!--
-              ✅ BACKEND-READY:
-              - id="bookingForm" used as JS hook
-              - Each input has name="" attr for FormData / fetch POST
-              - data-api="/api/bookings" for future endpoint wiring
-              - novalidate: JS handles validation (not browser default)
-            -->
-            <form
-              id="bookingForm"
-              class="form"
-              novalidate
-              data-api="/api/bookings"
-              aria-label="Table booking form"
-            >
+            <form id="bookingForm" class="form" novalidate data-api="/api/bookings" aria-label="Table booking form">
               <div class="form-group">
-                <label for="b-name">
-                  Full Name <span class="req" aria-label="required">*</span>
-                </label>
-                <input
-                  type="text"
-                  id="b-name"
-                  name="name"
-                  placeholder="e.g. Arjun Kumar"
-                  autocomplete="name"
-                  required
-                  aria-required="true"
-                  aria-describedby="b-name-err"
-                />
+                <label for="b-name">Full Name <span class="req" aria-label="required">*</span></label>
+                <input type="text" id="b-name" name="name" placeholder="e.g. Arjun Kumar" autocomplete="name" required aria-required="true" aria-describedby="b-name-err" />
                 <span class="field-error" id="b-name-err" role="alert"></span>
               </div>
-
               <div class="form-group">
-                <label for="b-phone">
-                  Phone Number <span class="req" aria-label="required">*</span>
-                </label>
-                <input
-                  type="tel"
-                  id="b-phone"
-                  name="phone"
-                  placeholder="+91 98765 43210"
-                  autocomplete="tel"
-                  pattern="[0-9+\s\-]{7,15}"
-                  required
-                  aria-required="true"
-                  aria-describedby="b-phone-err"
-                />
+                <label for="b-phone">Phone Number <span class="req" aria-label="required">*</span></label>
+                <input type="tel" id="b-phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" pattern="[0-9+\s\-]{7,15}" required aria-required="true" aria-describedby="b-phone-err" />
                 <span class="field-error" id="b-phone-err" role="alert"></span>
               </div>
-
               <div class="form-row">
                 <div class="form-group">
-                  <label for="b-date">
-                    Date <span class="req" aria-label="required">*</span>
-                  </label>
-                  <input
-                    type="date"
-                    id="b-date"
-                    name="date"
-                    required
-                    aria-required="true"
-                    aria-describedby="b-date-err"
-                  />
+                  <label for="b-date">Date <span class="req" aria-label="required">*</span></label>
+                  <input type="date" id="b-date" name="date" required aria-required="true" aria-describedby="b-date-err" />
                   <span class="field-error" id="b-date-err" role="alert"></span>
                 </div>
                 <div class="form-group">
-                  <label for="b-time">
-                    Time <span class="req" aria-label="required">*</span>
-                  </label>
-                  <input
-                    type="time"
-                    id="b-time"
-                    name="time"
-                    min="11:00"
-                    max="22:30"
-                    required
-                    aria-required="true"
-                    aria-describedby="b-time-err"
-                  />
+                  <label for="b-time">Time <span class="req" aria-label="required">*</span></label>
+                  <input type="time" id="b-time" name="time" min="11:00" max="22:30" required aria-required="true" aria-describedby="b-time-err" />
                   <span class="field-error" id="b-time-err" role="alert"></span>
                 </div>
               </div>
-
               <div class="form-group">
-                <label for="b-guests">
-                  Number of Guests <span class="req" aria-label="required">*</span>
-                </label>
-                <select
-                  id="b-guests"
-                  name="guests"
-                  required
-                  aria-required="true"
-                  aria-describedby="b-guests-err"
-                >
+                <label for="b-guests">Number of Guests <span class="req" aria-label="required">*</span></label>
+                <select id="b-guests" name="guests" required aria-required="true" aria-describedby="b-guests-err">
                   <option value="">Select guests</option>
                   <option value="1-2">1 – 2 guests</option>
                   <option value="3-5">3 – 5 guests</option>
@@ -519,17 +203,10 @@
                 </select>
                 <span class="field-error" id="b-guests-err" role="alert"></span>
               </div>
-
               <div class="form-group">
                 <label for="b-notes">Special Requests <span class="optional">(optional)</span></label>
-                <textarea
-                  id="b-notes"
-                  name="notes"
-                  placeholder="Allergies, special occasion, seating preference..."
-                  rows="2"
-                ></textarea>
+                <textarea id="b-notes" name="notes" placeholder="Allergies, special occasion, seating preference..." rows="2"></textarea>
               </div>
-
               <button type="submit" class="btn btn-primary btn-full" id="bookingSubmitBtn">
                 <span class="btn-text">Confirm Booking</span>
                 <span class="btn-spinner" aria-hidden="true"></span>
@@ -537,71 +214,25 @@
             </form>
           </div>
 
-          <!-- ── CATERING FORM ───────────────────────── -->
+          <!-- CATERING FORM -->
           <div class="service-card" data-reveal>
             <div class="service-icon" aria-hidden="true">&#127881;</div>
             <h3 class="service-title">Catering Service</h3>
             <p class="service-desc">Let us bring the Royal Spice Garden experience directly to your event.</p>
-
-            <!--
-              ✅ BACKEND-READY:
-              - id="cateringForm" used as JS hook
-              - name="" attrs on all inputs
-              - data-api="/api/catering" for future endpoint wiring
-            -->
-            <form
-              id="cateringForm"
-              class="form"
-              novalidate
-              data-api="/api/catering"
-              aria-label="Catering enquiry form"
-            >
+            <form id="cateringForm" class="form" novalidate data-api="/api/catering" aria-label="Catering enquiry form">
               <div class="form-group">
-                <label for="c-name">
-                  Full Name <span class="req" aria-label="required">*</span>
-                </label>
-                <input
-                  type="text"
-                  id="c-name"
-                  name="name"
-                  placeholder="e.g. Priya Sharma"
-                  autocomplete="name"
-                  required
-                  aria-required="true"
-                  aria-describedby="c-name-err"
-                />
+                <label for="c-name">Full Name <span class="req" aria-label="required">*</span></label>
+                <input type="text" id="c-name" name="name" placeholder="e.g. Priya Sharma" autocomplete="name" required aria-required="true" aria-describedby="c-name-err" />
                 <span class="field-error" id="c-name-err" role="alert"></span>
               </div>
-
               <div class="form-group">
-                <label for="c-phone">
-                  Phone Number <span class="req" aria-label="required">*</span>
-                </label>
-                <input
-                  type="tel"
-                  id="c-phone"
-                  name="phone"
-                  placeholder="+91 98765 43210"
-                  autocomplete="tel"
-                  pattern="[0-9+\s\-]{7,15}"
-                  required
-                  aria-required="true"
-                  aria-describedby="c-phone-err"
-                />
+                <label for="c-phone">Phone Number <span class="req" aria-label="required">*</span></label>
+                <input type="tel" id="c-phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" pattern="[0-9+\s\-]{7,15}" required aria-required="true" aria-describedby="c-phone-err" />
                 <span class="field-error" id="c-phone-err" role="alert"></span>
               </div>
-
               <div class="form-group">
-                <label for="c-event">
-                  Event Type <span class="req" aria-label="required">*</span>
-                </label>
-                <select
-                  id="c-event"
-                  name="eventType"
-                  required
-                  aria-required="true"
-                  aria-describedby="c-event-err"
-                >
+                <label for="c-event">Event Type <span class="req" aria-label="required">*</span></label>
+                <select id="c-event" name="eventType" required aria-required="true" aria-describedby="c-event-err">
                   <option value="">Select event type</option>
                   <option value="wedding">Wedding</option>
                   <option value="birthday">Birthday Party</option>
@@ -612,47 +243,22 @@
                 </select>
                 <span class="field-error" id="c-event-err" role="alert"></span>
               </div>
-
               <div class="form-row">
                 <div class="form-group">
-                  <label for="c-guests">
-                    No. of Guests <span class="req" aria-label="required">*</span>
-                  </label>
-                  <input
-                    type="number"
-                    id="c-guests"
-                    name="guestCount"
-                    placeholder="e.g. 150"
-                    min="10"
-                    max="5000"
-                    required
-                    aria-required="true"
-                    aria-describedby="c-guests-err"
-                  />
+                  <label for="c-guests">No. of Guests <span class="req" aria-label="required">*</span></label>
+                  <input type="number" id="c-guests" name="guestCount" placeholder="e.g. 150" min="10" max="5000" required aria-required="true" aria-describedby="c-guests-err" />
                   <span class="field-error" id="c-guests-err" role="alert"></span>
                 </div>
                 <div class="form-group">
                   <label for="c-date">Event Date</label>
-                  <input
-                    type="date"
-                    id="c-date"
-                    name="eventDate"
-                    aria-describedby="c-date-hint"
-                  />
+                  <input type="date" id="c-date" name="eventDate" aria-describedby="c-date-hint" />
                   <span class="field-hint" id="c-date-hint">Approx. date is fine</span>
                 </div>
               </div>
-
               <div class="form-group">
                 <label for="c-msg">Special Requirements <span class="optional">(optional)</span></label>
-                <textarea
-                  id="c-msg"
-                  name="notes"
-                  placeholder="Dietary preferences, cuisine style, venue details..."
-                  rows="3"
-                ></textarea>
+                <textarea id="c-msg" name="notes" placeholder="Dietary preferences, cuisine style, venue details..." rows="3"></textarea>
               </div>
-
               <button type="submit" class="btn btn-primary btn-full" id="cateringSubmitBtn">
                 <span class="btn-text">Request Catering</span>
                 <span class="btn-spinner" aria-hidden="true"></span>
@@ -660,27 +266,20 @@
             </form>
           </div>
 
-        </div><!-- /services-grid -->
+        </div>
       </div>
     </section>
 
-    <!-- ==========================================================
-         SECTION 5 — CONTACT
-    ========================================================== -->
+    <!-- SECTION 5 — CONTACT -->
     <section id="contact" class="contact section" aria-labelledby="contact-heading">
       <div class="container">
-
         <div class="section-header">
           <span class="section-label">Find Us</span>
           <h2 class="section-title" id="contact-heading">Get In <em>Touch</em></h2>
           <p class="section-desc">We'd love to hear from you. Visit us or reach out anytime.</p>
         </div>
-
         <div class="contact-grid">
-
-          <!-- Info Cards -->
           <div class="contact-info" role="list" aria-label="Contact information">
-
             <div class="info-card" role="listitem" data-reveal>
               <span class="info-icon" aria-hidden="true">&#128205;</span>
               <div>
@@ -692,19 +291,16 @@
                 </address>
               </div>
             </div>
-
-            <!-- ✅ Clickable phone numbers -->
             <div class="info-card" role="listitem" data-reveal>
               <span class="info-icon" aria-hidden="true">&#128222;</span>
               <div>
                 <h3 class="info-title">Phone</h3>
                 <p class="info-text">
-                  <a href="tel:+919876543210" class="contact-link" aria-label="Call +91 98765 43210">+91 98765 43210</a><br />
-                  <a href="tel:+914423456789" class="contact-link" aria-label="Call +91 44 2345 6789">+91 44 2345 6789</a>
+                  <a href="tel:+919876543210" class="contact-link">+91 98765 43210</a><br />
+                  <a href="tel:+914423456789" class="contact-link">+91 44 2345 6789</a>
                 </p>
               </div>
             </div>
-
             <div class="info-card" role="listitem" data-reveal>
               <span class="info-icon" aria-hidden="true">&#9200;</span>
               <div>
@@ -712,8 +308,6 @@
                 <p class="info-text">Monday &ndash; Sunday<br />11:00 AM &ndash; 11:00 PM</p>
               </div>
             </div>
-
-            <!-- ✅ Clickable email + WhatsApp CTA -->
             <div class="info-card" role="listitem" data-reveal>
               <span class="info-icon" aria-hidden="true">&#9993;</span>
               <div>
@@ -721,50 +315,31 @@
                 <p class="info-text">
                   <a href="mailto:hello@royalspicegarden.in" class="contact-link">hello@royalspicegarden.in</a>
                 </p>
-                <!-- ✅ WhatsApp deep link — replace number as needed -->
-                <a
-                  href="https://wa.me/919876543210?text=Hi%20Royal%20Spice%20Garden%2C%20I%20would%20like%20to%20make%20a%20reservation."
-                  class="btn btn-whatsapp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Chat with us on WhatsApp"
-                >
+                <a href="https://wa.me/919876543210?text=Hi%20Royal%20Spice%20Garden%2C%20I%20would%20like%20to%20make%20a%20reservation."
+                   class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
                   <span aria-hidden="true">&#128172;</span> WhatsApp Us
                 </a>
               </div>
             </div>
-
-          </div><!-- /contact-info -->
-
-          <!-- ✅ Google Maps embed — lazy loaded -->
+          </div>
           <div class="map-wrap" data-reveal>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125340.38766573788!2d77.98068685!3d9.91674455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c582b1189633%3A0xdc955b7264f63933!2sMadurai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1712000000000"
-              width="100%"
-              height="100%"
-              style="border:0;"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Royal Spice Garden location on Google Maps — 42 Anna Nagar Main Road, Madurai"
-              aria-label="Google Maps showing Royal Spice Garden in Madurai"
+              width="100%" height="100%" style="border:0;"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Royal Spice Garden location on Google Maps"
             ></iframe>
           </div>
-
-        </div><!-- /contact-grid -->
+        </div>
       </div>
     </section>
 
-  </main><!-- /main-content -->
+  </main>
 
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
+  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
     <div class="container footer-inner">
-      <div class="footer-brand" aria-label="Royal Spice Garden">
-        <span aria-hidden="true">&#9830;</span> Royal Spice Garden
-      </div>
+      <div class="footer-brand"><span aria-hidden="true">&#9830;</span> Royal Spice Garden</div>
       <p class="footer-tagline">Crafted with love in Madurai since 2008.</p>
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="#home">Home</a>
@@ -777,19 +352,9 @@
     </div>
   </footer>
 
-  <!-- ============================================================
-       SUCCESS MODAL
-       ✅ role="dialog" + aria-modal + focus-trapped via JS
-  ============================================================ -->
-  <div
-    class="modal-overlay"
-    id="modalOverlay"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="modalTitle"
-    aria-describedby="modalMsg"
-    hidden
-  >
+  <!-- SUCCESS MODAL -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true"
+       aria-labelledby="modalTitle" aria-describedby="modalMsg" hidden>
     <div class="modal" id="modal">
       <div class="modal-icon" aria-hidden="true">&#10003;</div>
       <h2 class="modal-title" id="modalTitle">Success!</h2>
